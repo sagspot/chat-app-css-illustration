@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: $light-grayish-violet;
+}
+
+h1,
+p {
+  margin: 0;
+}
+.flex {
+  display: flex;
+  &-jc-c {
+    justify-content: center;
+  }
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+  &-space {
+    flex-grow: 1;
+  }
+  &-dc {
+    flex-direction: column;
+  }
+}
+.mr {
+  margin-right: rem(8);
+}
+.svg {
+  height: rem(16);
+  width: rem(16);
+  svg {
+    height: 100%;
+    color: $white;
+  }
+}

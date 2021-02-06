@@ -1,0 +1,7 @@
+.main {
+  @include breakup(medium) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

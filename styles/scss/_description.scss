@@ -1,0 +1,35 @@
+.description {
+  animation: slide-left 1s ease;
+  &-wrapper {
+    max-width: rem(560);
+    width: 82%;
+    margin: auto;
+    text-align: center;
+    @include breakup(medium) {
+      text-align: left;
+      width: 60%;
+    }
+    h1 {
+      margin-bottom: rem(28);
+      font-size: rem(40);
+      font-weight: 500;
+      color: $very-dark-desaturated-violet;
+    }
+    p {
+      margin-bottom: rem(66);
+      font-size: rem(16);
+      line-height: 1.5;
+      color: $dark-grayish-violet;
+    }
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) opacity 1;
+  }
+}

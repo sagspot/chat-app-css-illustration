@@ -1,0 +1,17 @@
+@function rem($size) {
+  @return $size/16 * 1rem;
+}
+@function bg($angle) {
+  @return linear-gradient($angle, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+$breakpoints-up: (
+  'medium': rem(600),
+  'large': rem(768),
+);
+
+@mixin breakup($size) {
+  @media (min-width: map-get($breakpoints-up , $size)) {
+    @content;
+  }
+}
