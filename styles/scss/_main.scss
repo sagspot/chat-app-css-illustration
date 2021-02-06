@@ -1,7 +1,23 @@
 .main {
+  position: relative;
   @include breakup(medium) {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &::before {
+    @include breakup(medium) {
+      content: '';
+      width: rem(440);
+      height: rem(696);
+      height: 80%;
+      position: absolute;
+      bottom: 0;
+      left: 75%;
+      border-radius: 50% 50% 0 0;
+      background: bg(180deg);
+      opacity: 0.05;
+    }
   }
 }
